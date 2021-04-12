@@ -1,0 +1,9 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  hello-world:
+    desc: Included Hello world task
+    cmds:
+      - echo "Included Hello world"

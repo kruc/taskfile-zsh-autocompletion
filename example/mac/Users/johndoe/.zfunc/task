@@ -1,0 +1,9 @@
+function task {
+    if [[ ! -f Taskfile.yml ]]; then
+      command task --taskfile=/Users/$USER/taskfiles/globalTaskfile.yml "$@"
+      return $?
+    fi
+
+    command task "$@"
+    return $?
+}
